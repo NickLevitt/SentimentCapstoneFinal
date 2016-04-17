@@ -1,0 +1,4 @@
+model_checkpoint_path: "/Users/nicklevitt/Desktop/SentimentCap/CNN/runs/1460654314/checkpoints/model-12600"
+all_model_checkpoint_paths: "/Users/nicklevitt/Desktop/SentimentCap/CNN/runs/1460654314/checkpoints/model-5000"
+all_model_checkpoint_paths: "/Users/nicklevitt/Desktop/SentimentCap/CNN/runs/1460654314/checkpoints/model-10000"
+all_model_checkpoint_paths: "/Users/nicklevitt/Desktop/SentimentCap/CNN/runs/1460654314/checkpoints/model-12600"
