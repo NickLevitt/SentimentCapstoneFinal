@@ -3,7 +3,7 @@ library(reshape)
 
 setwd("~/Desktop/SentimentCap/StoryData")
 
-df = as.data.frame(read.csv('DraculaSent.csv', header = FALSE))
+df = as.data.frame(read.csv('AnnaKareninaSent.csv', header = FALSE))
 names = c('JOY','FEAR','ANGER','SADNESS','DISGUST','SHAME','GUILT')
 col1 = c()
 col2= c()
@@ -19,6 +19,7 @@ for(i in 1:7) {
 
 df = data.frame(value = col1, emot = col2, time = col3)
 p = ggplot(df, aes(x = time, y = value, color = factor(emot)))
-p + geom_smooth(se = FALSE) + geom_point() + geom_line()
+# p + geom_smooth(se = FALSE) + geom_point() + geom_line()
+p + geom_smooth(se = FALSE) + guides(fill=guide_legend(title=NULL)) + ggtitle('Emotional Landscape of Anna Karenina')
 
 
