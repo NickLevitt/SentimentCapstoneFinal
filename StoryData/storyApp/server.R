@@ -36,9 +36,9 @@ shinyServer(function(input, output, session) {
       if (input$line) {
         p = p + geom_line()
       }
-      if(input$log) {
-        p = p + scale_y_log10()
-      }
+#       if(input$log) {
+#         p = p + scale_y_log10()
+#       }
       p
     }
     })

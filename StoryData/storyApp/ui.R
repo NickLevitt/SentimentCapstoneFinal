@@ -13,8 +13,8 @@ shinyUI(navbarPage("View Story Plots",
                                                choices = emotions, selected = emotions[1], multiple=TRUE),
                                 
                                 checkboxInput('point', 'Show Data Points?', value = FALSE),
-                                checkboxInput('line', 'Show line graph?', value = FALSE),
-                                checkboxInput('log', 'Log transform?', value = FALSE)
+                                checkboxInput('line', 'Show line graph?', value = FALSE)
+                                # checkboxInput('log', 'Log transform?', value = FALSE)
                               ),
                               
                               mainPanel(
