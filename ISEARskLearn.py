@@ -20,7 +20,7 @@ for i in range(0, len(df)):
     sentence = df['SIT'][i]
     sentence = re.sub(r"[^\w\d'\s]+", ' ', sentence.lower())
     sentence = sentence.split()
-    sentence = [word for word in sentence if word not in stop]
+    # sentence = [word for word in sentence if word not in stop]
     sentence = ' '.join(sentence)
     sentdf.append(sentence)
     Y_labels.append(df['FIELD1'][i])
